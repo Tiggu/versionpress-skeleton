@@ -1,0 +1,4 @@
+[submodule "wp"]
+  path = wp
+  url = git://github.com/WordPress/WordPress.git
+  ignore = dirty

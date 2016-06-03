@@ -1,0 +1,15 @@
+mywp:
+  image: tatemz/versionpress
+  links:
+    - mydb:mysql
+  ports:
+    - "8080:80"
+  volumes:
+    - ./:/var/www/html/
+  environment:
+    WORDPRESS_DB_PASSWORD: root
+
+mydb: 
+  image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: root
